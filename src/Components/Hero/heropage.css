@@ -1,9 +1,9 @@
-main{
+.hero__contaner{
     width: 90%;
     min-height: 40rem;
     margin: 0 auto;
     padding: 0 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -63,9 +63,14 @@ main{
     object-fit: cover;
 }
 
-@media screen and(max-width:765px) {
-    section{
+@media screen and (max-width:765px) {
+    .hero__contaner{
         grid-template-columns: 1fr;
         
+    }
+    .home__hero_img{
+       
+        padding: 8rem ;
+       
     }
 }

@@ -1,4 +1,4 @@
-main{
+.recently__contane{
     width: 90%;
     min-height: 40rem;
     margin: 0 auto;
@@ -63,9 +63,13 @@ main{
     object-fit: cover;
 }
 
-@media screen and(max-width:765px) {
-    main{
+@media screen and (max-width:765px) {
+   .recently__contane{
         grid-template-columns: 1fr;
         
+    }
+    .recently__hero_img{
+        padding: 9rem ;
+       
     }
 }

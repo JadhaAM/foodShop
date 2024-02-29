@@ -1,6 +1,6 @@
-main{
+.About__contaner{
     width: 90%;
-    min-height: 40rem;
+    height: 40rem;
     margin: 0 auto;
     padding: 0 2rem;
     margin-top: 3rem;
@@ -65,9 +65,14 @@ main{
     object-fit: cover;
 }
 
-@media screen and(max-width:765px) {
-    section{
+@media screen and (max-width:765px) {
+    .About__contaner{
+        min-height: 40rem;
         grid-template-columns: 1fr;
         
+    }
+    .about__hero_img{
+        padding: 9rem ;
+       
     }
 }

@@ -2,7 +2,7 @@ import './aboutUs.css';
 function AboutUs() {
     return (
         <>
-            <main className='section'>
+            <main className='section About__contaner'>
                 <div className='about__hero_img'>
                 </div>
                 <div className='home__title'>

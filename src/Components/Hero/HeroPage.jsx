@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 function HeroPage() {
     return (
         <>
-            <main>
+            <main className='main hero__contaner'>
                 <div className='home__title'>
                     <h3 className='section__title'>Enjoy Delicious</h3>
                     <div className='flex'>

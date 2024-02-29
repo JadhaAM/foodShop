@@ -1,11 +1,13 @@
-main{
+.newsletter__contaner{
     width: 90%;
-    min-height: 40rem;
+    height: 30rem;
     margin: 0 auto;
     padding: 0 2rem;
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var( --title-color);
+    border-radius: 5rem;
 }
 
 .home__title{
@@ -17,20 +19,38 @@ main{
  flex-direction: column;
  gap: 1rem;
 }
-.home__title >.home__sub__title{
+.home__title >.home__sub__title,.colur{
     font-style: var( --title-font);
     font-size: var( --normal-font-size);
-    color: var(--first-color);
+    color: var(--body-color);
 }
 
-.flex{
+.input__box{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: var( --biggest-font-size);
-    gap: 0.5rem;
+    padding: 1% 1% ;
+    font-size: var( --normal-font-size);
+   background-color: #fff;
+   border-radius: 1rem;
 }
 
+input{
+    padding: 1% 1% ;
+    border: none;
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+}
+
+.s_btn{
+    display: flex;
+    align-items: center;
+    padding: 1% 1% ;
+    background-color:orange;
+    border-radius: 1rem;
+    color: var(--body-color);
+    gap: 1rem;
+}
 .home__title >p{
     font-size: var(  --normal-font-size);
 }
@@ -45,29 +65,24 @@ main{
     border-radius: 50%;
 }
 
-.btn{
-    display: flex;
-    align-items: center;
-    padding: 10px  15px;
-    background-color:orange;
-    border-radius: 10px;
-    color: var(--body-color);
-    gap: 1rem;
-}
-
-.about__hero_img{
+.newsletter__hero_img{
     width: 100%;
     padding: 0.5rem 1rem ;
-    background-image: url("../../assets/img/about-sushi.png");
+    background-image: url("../../assets/img/newsletter-sushi.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
 }
 
-@media screen and(max-width:765px) {
-    section{
+@media screen and (max-width:765px) {
+    .newsletter__contaner{
         grid-template-columns: 1fr;
-        
+        padding: 0 ;
+        border-radius: 0;
     }
+
+    .home__title{
+        padding:0.5rem;
+       }
 }

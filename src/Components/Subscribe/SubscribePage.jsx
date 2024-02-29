@@ -1,21 +1,22 @@
-import './aboutUs.css';
+import './subscribePage.css';
+import { RiSendPlaneLine } from "react-icons/ri";
+
 function SubscribePage() {
     return (
         <>
-            <main className='section'>
-                <div className='about__hero_img'>
+            <main className='section newsletter__contaner'>
+                <div className='newsletter__hero_img'>
                 </div>
                 <div className='home__title'>
-                    <p className='section__subtitle'>About Us</p>
-                    <div className='flex'>
-                        <h3 className='section__title'> We Provide  </h3>
-                        <div className="about__subLogoImg"></div>
+                    <p className='section__subtitle'>Newsletter</p>
+                        <h3 className='section__title colur'>Subscribe For <br />
+                            Offer Updates </h3>
+                    <div className='input__box'>
+                     <input className='input' type="text" placeholder='Enter email '  /> 
+                     <div className="s_btn">
+                        Order Now  <RiSendPlaneLine />
+                        </div>
                     </div>
-                    <h3 className='section__title'>Healthy Food</h3>
-                    <p>Food comes to us from our relatives, whether <br /> they
-                        have wings or roots. This is how we <br /> consider food,
-                        it also has  a  culture. It has a <br /> history that passes
-                        from generation to <br /> generation.</p>
                 </div>
 
             </main>

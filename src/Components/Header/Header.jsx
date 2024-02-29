@@ -1,5 +1,7 @@
 import { FaRegMoon } from "react-icons/fa";
 import './header.css'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 function Header() {
   return (
     <>
@@ -8,14 +10,16 @@ function Header() {
         <div className="LogoImg"></div>
         <h1>Sushi</h1>
       </div>
+    
       <nav>
-        <a href="Home">Home</a>
-        <a href="Home">About Us</a>
-        <a href="Home">Popular</a>
-        <a href="Home">Recently</a>
-        <FaRegMoon />
-
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/popular">Popular</Link>
+        <Link to="/recently">Recently</Link>
+        < FaRegMoon/>
       </nav>
+
+  
      </header>
     </>
   )

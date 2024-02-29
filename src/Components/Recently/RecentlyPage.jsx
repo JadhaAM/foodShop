@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 function RecentlyPage() {
     return (
         <>
-            <main className='section'>
+            <main className='section recently__contane'>
                 <div className='home__title'>
 
                     <p className='section__subtitle'>Recently Added</p>
@@ -20,7 +20,7 @@ function RecentlyPage() {
                     </div>
                 </div>
 
-                <div className='recently__hero_img'>
+                <div className='img recently__hero_img'>
                 </div>
 
             </main>
