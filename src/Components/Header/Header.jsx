@@ -16,7 +16,8 @@ function Header() {
         <Link to="/about">About Us</Link>
         <Link to="/popular">Popular</Link>
         <Link to="/recently">Recently</Link>
-        < FaRegMoon/>
+        <Link to="/subscribe">< FaRegMoon/></Link>
+      
       </nav>
 
   

@@ -79,7 +79,6 @@ input{
     .newsletter__contaner{
         grid-template-columns: 1fr;
         padding: 0 ;
-        border-radius: 0;
     }
 
     .home__title{
