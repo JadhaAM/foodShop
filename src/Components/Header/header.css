@@ -1,4 +1,4 @@
-header{
+header {
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,13 +10,14 @@ header{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5em;
 }
-.LogoImg{
+
+.LogoImg {
     width: 3rem;
     height: 3rem;
     background-image: url("../../assets/img/logo.png");
@@ -27,56 +28,82 @@ header{
     border-radius: 50%;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     gap: 1.8rem;
 }
 
-nav a{
-    color: var( --title-color);
-    font-size: var(  --h2-font-size);
+nav a,
+.subNavBar a {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
     font-weight: 500;
     transition: all 0.3s linear;
 }
 
-nav a:hover{
+nav a:hover,
+.subNavBar a:hover {
     color: var(--first-color-alt);
 }
 
-nav svg{
-    font-size: var(  --h2-font-size);
+nav svg,
+.subNavBar svg,
+header svg {
+    font-size: var(--h2-font-size);
+}
+
+header>svg {
+    display: none;
+}
+
+.subNavBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    flex-direction: column;
+    background-color: aqua;
+    position: absolute;
+    top: 5rem;
+    right: 0;
 }
 
 @media screen and (max-width:765px) {
-    header{
+    header {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 1rem 3rem;
         gap: 2rem;
     }
 
-    nav{
-        gap: 0.5rem;
+    nav {
+        display: none;
     }
-    
-nav a{
-    font-size:0.7rem;
 
-}
-nav svg{
-    font-size: var( --normal-font-size);
-}
+    header>svg {
+        display: block;
+    }
 
-.logo{
-    gap: 0;
-}
 
-.LogoImg{
-    width: 1.5rem;
-    height: 1.5rem;
-   
-}
+    nav a {
+        font-size: 0.7rem;
+
+    }
+
+    nav svg {
+        font-size: var(--normal-font-size);
+    }
+
+    .logo {
+        gap: 0;
+    }
+
+    .LogoImg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+    }
 }
