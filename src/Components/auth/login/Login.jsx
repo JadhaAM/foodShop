@@ -17,13 +17,17 @@ const Login = () => {
           <input type="text" placeholder="Enter Password" name="password" required />
         </div>
 
-        <a href="/signIn.html">
-          <input type="submit" className="button" value="login" />
-        </a>
+        <Link to="/login" >
+           <input type="submit" className="button" value="login" />
+        </Link>
+
       </form>
       <div className="w-full p-2">
         <p>
-          Don't have an account? <Link to={SignUp}><span>Sign Up</span></Link>
+          Don't have an account?
+          <Link to="/signUp">
+            <span>Sign Up</span>
+          </Link>
         </p>
       </div>
     </div>

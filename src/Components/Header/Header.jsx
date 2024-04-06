@@ -3,13 +3,17 @@ import { FaRegMoon } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import './header.css'
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -21,33 +25,27 @@ function Header() {
       </div>
     
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/popular">Popular</Link>
-        <Link to="/recently">Recently</Link>
-        <Link to="/subscribe">< FaRegMoon/></Link>
-        <Link to="/Login">Login</Link>
-      
+        <Link to="/" onClick={closeSidebar}>Home</Link>
+        <Link to="/about" onClick={closeSidebar}>About Us</Link>
+        <Link to="/popular" onClick={closeSidebar}>Popular</Link>
+        <Link to="/recently" onClick={closeSidebar}>Recently</Link>
+        <Link to="/subscribe" onClick={closeSidebar}>< FaRegMoon/></Link>
+        <Link to="/login" onClick={closeSidebar}>Login</Link>
       </nav> 
       {isOpen && (
-       
-      <div className='subNavBar'>
-      <Link  to="/">Home</Link>
-      <Link to="/about">About Us</Link>
-      <Link to="/popular">Popular</Link>
-      <Link to="/recently">Recently</Link>
-      <Link to="/subscribe">< FaRegMoon/></Link>
-      <Link to="/Login">Login</Link>
-    
-    </div> 
+        <div className='subNavBar'>
+          <Link to="/" onClick={closeSidebar}>Home</Link>
+          <Link to="/about" onClick={closeSidebar}>About Us</Link>
+          <Link to="/popular" onClick={closeSidebar}>Popular</Link>
+          <Link to="/recently" onClick={closeSidebar}>Recently</Link>
+          <Link to="/subscribe" onClick={closeSidebar}>< FaRegMoon/></Link>
+          <Link to="/login" onClick={closeSidebar}>Login</Link>
+        </div> 
       )}
       < IoMenu onClick={toggleNavbar} />
-
-
-  
      </header>
     </>
   )
 }
 
-export default Header
+export default Header;

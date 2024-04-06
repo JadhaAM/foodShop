@@ -27,7 +27,7 @@ const SignUp = () => {
           <input type="text" placeholder="Enter Password" name="confirmpassword" required />
         </div>
 
-        <Link to={Login}>
+        <Link to="/login">
           <input type="submit" className="button" value="Register" />
         </Link>
       </form>
