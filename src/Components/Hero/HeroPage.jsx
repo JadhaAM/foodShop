@@ -1,5 +1,11 @@
 import './heropage.css';
 import { FaArrowRight } from "react-icons/fa";
+import AboutUs from './Components/About/AboutUs';
+import Header from './Components/Header/Header';
+import HeroPage from './Components/Hero/HeroPage';
+import PopularPage from './Components/PopularPage/PopularPage';
+import RecentlyPage from './Components/Recently/RecentlyPage';
+import SubscribePage from './Components/Subscribe/SubscribePage';
 function HeroPage() {
     return (
         <>
@@ -20,7 +26,10 @@ function HeroPage() {
                 </div>
                 <div className='home__hero_img'>              
                 </div>
-    
+                <AboutUs/>
+                <PopularPage/>
+                <RecentlyPage/>
+                <SubscribePage/>
             </main>
         </>
     )
